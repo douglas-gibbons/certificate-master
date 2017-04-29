@@ -24,7 +24,7 @@ The docker image exits once it has completed, and can be run any number of times
 
 ## Example Use (With Docker Compose)
 
-See example [Docker Compose](docker-compose.yml) file.
+See example [Docker Compose](https://github.com/douglas-gibbons/certificate-master/blob/master/docker-compose.yml) file.
 
 ## Example Use (Wih Docker)
 
@@ -39,10 +39,10 @@ docker run \
   -e COUNTRY_CODE=GB \
   -e STATE=London \
   -e CITY=London \
-  certificatemaster_certs
+  dougg/certificate-master
 ```
 
 ### Volumes
 
-As per the example [Docker Compose](docker-compose.yml) file, you'll want to have /certs as a volume, so you can use these certificates.
+As per the example [Docker Compose](https://github.com/douglas-gibbons/certificate-master/blob/master/docker-compose.yml) file, you'll want to have /certs as a volume, so you can use these certificates.
 

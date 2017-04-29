@@ -3,7 +3,7 @@ version: '2'
 services:
 
   certs:
-    build: .
+    image: dougg/certificate-master
     environment:
       - CERTS=host1 host2 host3
       - AUTHORITY_NAME=Automated
