@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+
+  certs:
+    build: .
+    environment:
+      - CERTS=host1 host2 host3
+      - AUTHORITY_NAME=Automated
+      - AUTHORITY_PASSWORD=PLEASE_CHANGE_ME
+      - COMPANY=Zenly
+      - DEPARTMENT=Operations
+      - COUNTRY_CODE=GB
+      - STATE=London
+      - CITY=London
+    volumes:
+      - certs:/certs
+
+volumes:
+  certs:
+    driver: local
+
